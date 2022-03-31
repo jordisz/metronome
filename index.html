@@ -8,19 +8,14 @@
   </head>
   <body>
     <div class="title"><h1>Metronome</h1></div>
-    <div class="current-tempo"></div>
+    <div id="tempo"></div>
+    <div id="status-icon"></div>
     <div class="controls">
-      <button>-5</button>
-      <button>-1</button>
-      <button>Play</button>
-      <button>+1</button>
-      <button>+5</button>
-    </div>
-    <div class="about">
-      <p>
-        By <a href="https://www.jordisz.dev" rel="author">Jordi Sánchez</a>,
-        2022
-      </p>
+      <button class="tempo-change" data-change="-5">-5</button>
+      <button class="tempo-change" data-change="-1">-1</button>
+      <button id="play-button">Play</button>
+      <button class="tempo-change" data-change="+1">+1</button>
+      <button class="tempo-change" data-change="+5">+5</button>
     </div>
     <script src="metronome.js"></script>
     <script src="app.js"></script>
